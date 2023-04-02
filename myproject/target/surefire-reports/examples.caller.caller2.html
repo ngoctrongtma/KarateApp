@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.caller.caller2</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2023-04-02 05:33:17 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:7]">[1:7] caller feature usage </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/caller/caller2.feature</span><span class="feature-description">put caller</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">caller feature usage </span>
+</div>
+<div class="scenario-time passed">ms: 1840</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="1">17:33:16.079 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And def getFeature = call read('./caller1.feature')</div>
+</div>
+<div class="time-cell passed">1112</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">examples/caller/./caller1.feature</div>
+</div>
+<div class="time-cell passed">1099</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'posts', 1</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">1083</div>
+</div>
+<div class="preformatted" data-parent="5">17:33:16.751 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_275)
+
+17:33:17.247 response time in milliseconds: 490.55
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Age: 18975
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 7b1869aa88fb3f88-SIN
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 02 Apr 2023 10:33:17 GMT
+1 &lt; Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BI%2BJNXXk9cYXZLBg0I2spGEEdgHY1HZ12s3vNb5ZHFOYluxcKuZgSqmH4LLEFCW%2B2BpZqbfRIUr8isHOAfJ2AVrCLGDwvnUsbD7zSpcJDgFMRoCrNc58js9Gp%2BWPW2b2n0WPXhlKTuDGumGrRBDr"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1677703661
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print 'after get', response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="7">17:33:17.259 [print] after get {
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "userId": 1
+}</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And path 'posts', getFeature.response.id</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And getFeature.response.title = 'title update with put method'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And request getFeature.response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When method PUT</div>
+</div>
+<div class="time-cell passed">703</div>
+</div>
+<div class="preformatted" data-parent="11">17:33:17.284 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 229
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_275)
+{"id":1,"title":"title update with put method","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto","userId":1}
+
+17:33:17.983 response time in milliseconds: 684.29
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7b1869abffc04486-SIN
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 02 Apr 2023 10:33:17 GMT
+1 &lt; Etag: W/"f6-/pTdCiSm2L5jseXYMt+WimXL21s"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KJfx0T5MXBvyJVyyqn%2FenMEd%2BHdOpwR5u%2F%2BI3Uu3aCcEZQWsSzfwP%2FCGeW2XgwCr7Cj43wZ2N2HH1j%2BbSp7Hok9tHkrGfGohzkUoVVfSTZ%2FTzYMGS8N9y2ZZLjOOcztetLSf6eiRAjF2oXTktkPl"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1680431636
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "title": "title update with put method",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "userId": 1
+}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And print 'after put', response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="13">17:33:17.986 [print] after put {
+  "id": 1,
+  "title": "title update with put method",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "userId": 1
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

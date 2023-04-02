@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>examples.scenario_outline.scenarioOutLine</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2023-04-02 03:53:26 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:7]">[1.1:7] GET request with example table - 1 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:7]">[1.2:7] GET request with example table - 2 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.3:7]">[1.3:7] GET request with example table - 3 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/scenario_outline/scenarioOutLine.feature</span><span class="feature-description">test scenario outline</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:7]</span><span class="scenario-name">GET request with example table - 1 </span>
+</div>
+<div class="scenario-time passed">ms: 2181</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">15:53:22.470 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And path 'users', id</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">2177</div>
+</div>
+<div class="preformatted" data-parent="3">15:53:23.046 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_275)
+
+15:53:24.741 response time in milliseconds: 1691.28
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Age: 15167
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 7b17d763dba84a7d-SIN
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 02 Apr 2023 08:53:25 GMT
+1 &lt; Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pxLCxNgWyAgO%2FzVUDm34T5geht0ZFbjM9LA4Osk67j6L8hckeQ%2F6oj2pokJORVEAEuOORozaxJc2xBmGXoB%2F11KwuDS8slX1rp0mHwi1kXaTrznTJw31evul9uogQrofam0qsTmyeJk4%2B5L5v%2B23"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1679370189
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.2:7]</span><span class="scenario-name">GET request with example table - 2 </span>
+</div>
+<div class="scenario-time passed">ms: 1002</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:7]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="5">15:53:22.470 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And path 'users', id</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">999</div>
+</div>
+<div class="preformatted" data-parent="7">15:53:24.759 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_275)
+
+15:53:25.756 response time in milliseconds: 977.56
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: REVALIDATED
+1 &lt; CF-RAY: 7b17d767386b9fa9-SIN
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 02 Apr 2023 08:53:26 GMT
+1 &lt; Etag: W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2RgadOoEroyxiD68O13RcKSJrhJcKR3BpipDI4qpC%2FU1ELBGiAY3J8%2BYC24RXyYxqMzHNjPE4O49tWsyLK%2FlZ7L5n3%2FDmhyWJ9rYEfPv5VkyeRPrJDjZ8pAoviLtklvPXV6hHfpuCvNT%2FS%2BBWdk%2F"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1679292633
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 2,
+  "name": "Ervin Howell",
+  "username": "Antonette",
+  "email": "Shanna@melissa.tv",
+  "address": {
+    "street": "Victor Plains",
+    "suite": "Suite 879",
+    "city": "Wisokyburgh",
+    "zipcode": "90566-7771",
+    "geo": {
+      "lat": "-43.9509",
+      "lng": "-34.4618"
+    }
+  },
+  "phone": "010-692-6593 x09125",
+  "website": "anastasia.net",
+  "company": {
+    "name": "Deckow-Crist",
+    "catchPhrase": "Proactive didactic contingency",
+    "bs": "synergize scalable supply-chains"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.3:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.3:7]</span><span class="scenario-name">GET request with example table - 3 </span>
+</div>
+<div class="scenario-time passed">ms: 512</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.3:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.3:7]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="9">15:53:22.470 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And path 'users', id</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">502</div>
+</div>
+<div class="preformatted" data-parent="11">15:53:25.773 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_275)
+
+15:53:26.272 response time in milliseconds: 483.96
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Age: 19796
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 7b17d76dace31910-SIN
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 02 Apr 2023 08:53:27 GMT
+1 &lt; Etag: W/"208-uuwhfwQMzFzbJr9Pg6DKXae0SXA"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JaxraSk%2BptPJDKvt68uPHgUr5dHVbENKkRVTOBe%2FzoFhKmuvPpfCAAC%2BPtTNEphJgEpcDU5hkjKACR6oTPdJVuVAUhsebPw1U6y2EjZA4mlwqvKjaFbxHL5C%2BWaXJILgbp%2FtSU8Ign8iZDx66CmC"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1680338170
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 3,
+  "name": "Clementine Bauch",
+  "username": "Samantha",
+  "email": "Nathan@yesenia.net",
+  "address": {
+    "street": "Douglas Extension",
+    "suite": "Suite 847",
+    "city": "McKenziehaven",
+    "zipcode": "59590-4157",
+    "geo": {
+      "lat": "-68.6102",
+      "lng": "-47.0653"
+    }
+  },
+  "phone": "1-463-123-4447",
+  "website": "ramiro.info",
+  "company": {
+    "name": "Romaguera-Jacobson",
+    "catchPhrase": "Face to face bifurcated interface",
+    "bs": "e-enable strategic applications"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
