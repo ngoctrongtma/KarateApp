@@ -1,0 +1,10 @@
+examples\get_request\GetRunner.class
+examples\caller\CallerRunner.class
+examples\delete_request\deleteRunner.class
+examples\test_data_input_file\DataInputFile.class
+examples\scenario_outline\ScenarioOutLineRunner.class
+examples\performence_test\UsersRunner.class
+examples\post_request\PostRunner.class
+examples\ExamplesTest.class
+examples\put_request\PutRunner.class
+examples\users\UsersRunner.class
