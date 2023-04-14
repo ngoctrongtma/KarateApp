@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>examples.users.postRequest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">1</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2023-04-14 10:53:39 AM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1:8]">[1:8] create a user and then get it by id </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/postRequest.feature</span><span class="feature-description">sample karate test script for post request</span></div><div class="scenario"><div class="scenario-heading" id="[1:8]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">post</a></div><span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">create a user and then get it by id </span></div><div class="scenario-time failed">ms: 5561</div></div><div class="step-row"><div class="step-container" id="[1:8]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:8]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">17</div></div><div class="preformatted" data-parent="1">10:53:33.315 karate.env system property was:</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">* def user = read('classpath:data/post_request/user.json')</div></div><div class="time-cell passed">9</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users'</div></div><div class="time-cell passed">16</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">And request user</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref failed">5</div><div class="step-cell failed">When method post</div></div><div class="time-cell failed">5518</div></div><div class="preformatted" data-parent="5">10:53:38.851 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:53:39.171 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 320 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.172 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+postRequest.feature:13 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="6"><div class="step-ref skipped">6</div><div class="step-cell skipped">Then status 201</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref skipped">7</div><div class="step-cell skipped">* def id = response.id</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="8"><div class="step-ref skipped">8</div><div class="step-cell skipped">* print 'created id is: ', id</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="9"><div class="step-ref skipped">9</div><div class="step-cell skipped">Given path id</div></div><div class="time-cell skipped">0</div></div></div></div>
+    </div>   
+  </body>
+</html>

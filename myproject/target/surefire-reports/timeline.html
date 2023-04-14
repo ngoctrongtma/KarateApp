@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-2"},{"id":2,"content":"ForkJoinPool-1-worker-5"},{"id":3,"content":"ForkJoinPool-1-worker-1"},{"id":4,"content":"ForkJoinPool-1-worker-4"},{"id":5,"content":"ForkJoinPool-1-worker-3"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"deleteRequest[1:8]","start":6681,"end":6718,"title":"deleteRequest[1:8] 07:00:06.681-07:00:06.718 Delete request"},{"id":2,"group":2,"content":"getRequest[1:7]","start":6680,"end":12283,"title":"getRequest[1:7] 07:00:06.680-07:00:12.283 get all users and then get the first user by id"},{"id":3,"group":3,"content":"postRequest[1:8]","start":6681,"end":12256,"title":"postRequest[1:8] 07:00:06.681-07:00:12.256 create a user and then get it by id"},{"id":4,"group":4,"content":"putRequest[1:7]","start":6680,"end":12259,"title":"putRequest[1:7] 07:00:06.680-07:00:12.259 Put request"},{"id":5,"group":5,"content":"users[1:8]","start":6676,"end":12256,"title":"users[1:8] 07:00:06.676-07:00:12.256 get all users and then get the first user by id"},{"id":6,"group":1,"content":"users[2:20]","start":6765,"end":12258,"title":"users[2:20] 07:00:06.765-07:00:12.258 create a user and then get it by id"},{"id":7,"group":5,"content":"users[3:29]","start":12269,"end":12395,"title":"users[3:29] 07:00:12.269-07:00:12.395 Delete request"},{"id":8,"group":3,"content":"users[4:36]","start":12270,"end":12366,"title":"users[4:36] 07:00:12.270-07:00:12.366 Put request"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

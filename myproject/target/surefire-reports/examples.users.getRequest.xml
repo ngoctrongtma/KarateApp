@@ -1,0 +1,27 @@
+<testsuite failures="1"
+           name="examples/users/getRequest.feature"
+           skipped="0"
+           tests="1"
+           time="5.575355">
+   <testcase classname="examples.users.getRequest"
+             name="get all users and then get the first user by id"
+             time="5.575355">
+      <failure message="getRequest.feature:19 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def companyExpected = ................................................... passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getRequest.feature:19 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method get (getRequest.feature:19)&#xD;
+
+Then status 200 ........................................................... skipped
+* def first = response[0] ................................................. skipped
+Given path 'users', first.id .............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response.id == 1 ................................................ skipped
+And match response.company == companyExpected ............................. skipped</failure>
+   </testcase>
+</testsuite>

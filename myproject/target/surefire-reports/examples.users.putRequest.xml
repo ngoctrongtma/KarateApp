@@ -1,0 +1,23 @@
+<testsuite failures="1"
+           name="examples/users/putRequest.feature"
+           skipped="0"
+           tests="1"
+           time="5.537268">
+   <testcase classname="examples.users.putRequest"
+             name="Put request"
+             time="5.537268">
+      <failure message="putRequest.feature:21 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def post = .............................................................. passed
+Given url 'https://jsonplaceholder.typicode.com/' ......................... passed
+And path 'posts', 1 ....................................................... passed
+And request post .......................................................... passed
+When method PUT ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: putRequest.feature:21 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method PUT (putRequest.feature:21)&#xD;
+
+Then status 200 ........................................................... skipped</failure>
+   </testcase>
+</testsuite>

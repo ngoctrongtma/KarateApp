@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>examples.users.putRequest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">1</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2023-04-14 10:53:39 AM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1:7]">[1:7] Put request </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/putRequest.feature</span><span class="feature-description">sample karate test script for put request</span></div><div class="scenario"><div class="scenario-heading" id="[1:7]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">put</a></div><span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Put request </span></div><div class="scenario-time failed">ms: 5537</div></div><div class="step-row"><div class="step-container" id="[1:7]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:7]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">12</div></div><div class="preformatted" data-parent="1">10:53:33.315 karate.env system property was:</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">* def post =</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="2">{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/'</div></div><div class="time-cell passed">10</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">And path 'posts', 1</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">And request post</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="6"><div class="step-ref failed">6</div><div class="step-cell failed">When method PUT</div></div><div class="time-cell failed">5508</div></div><div class="preformatted" data-parent="6">10:53:38.847 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 275
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:53:39.171 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 323 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:53:39.175 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+putRequest.feature:21 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="7"><div class="step-ref skipped">7</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div></div></div>
+    </div>   
+  </body>
+</html>

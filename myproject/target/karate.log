@@ -1,4 +1,1055 @@
-14:47:07.947 [main] INFO  io.gatling.compiler.ZincCompiler$ - Compiling 1 Scala source and 10 Java sources to C:\Users\tntrong\LearningKarate\KarateBeginer\myproject\target\test-classes ...
-14:47:12.438 [main] INFO  io.gatling.compiler.ZincCompiler$ - C:\Users\tntrong\LearningKarate\KarateBeginer\myproject\src\test\java\examples\ExamplesTest.java: C:\Users\tntrong\LearningKarate\KarateBeginer\myproject\src\test\java\examples\ExamplesTest.java uses unchecked or unsafe operations.
-14:47:12.439 [main] INFO  io.gatling.compiler.ZincCompiler$ - C:\Users\tntrong\LearningKarate\KarateBeginer\myproject\src\test\java\examples\ExamplesTest.java: Recompile with -Xlint:unchecked for details.
-14:47:12.478 [main] INFO  io.gatling.compiler.ZincCompiler$ - Done compiling.
+22:04:42.530 [main] INFO  io.gatling.compiler.ZincCompiler$ - Compiling 1 Scala source and 10 Java sources to D:\NgocTrong\KarateApp\myproject\target\test-classes ...
+22:04:46.443 [main] INFO  io.gatling.compiler.ZincCompiler$ - D:\NgocTrong\KarateApp\myproject\src\test\java\examples\ExamplesTest.java: D:\NgocTrong\KarateApp\myproject\src\test\java\examples\ExamplesTest.java uses unchecked or unsafe operations.
+22:04:46.444 [main] INFO  io.gatling.compiler.ZincCompiler$ - D:\NgocTrong\KarateApp\myproject\src\test\java\examples\ExamplesTest.java: Recompile with -Xlint:unchecked for details.
+22:04:46.470 [main] INFO  io.gatling.compiler.ZincCompiler$ - Done compiling.
+22:04:48.140 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+22:04:48.687 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+22:04:49.473 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+22:04:49.473 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+22:04:49.480 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+22:04:49.487 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+22:04:50.172 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+22:04:50.330 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:50.549 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  com.intuit.karate - karate.env system property was:  
+22:04:50.553 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:50.643 [GatlingSystem-akka.actor.default-dispatcher-3] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 90 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:50.644 [GatlingSystem-akka.actor.default-dispatcher-3] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:50.796 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 465 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:50.802 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:51.060 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  com.intuit.karate - karate.env system property was:  
+22:04:51.062 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:51.542 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+22:04:51.544 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:52.049 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was:  
+22:04:52.052 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:52.131 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+22:04:52.134 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:52.138 [GatlingSystem-akka.actor.default-dispatcher-7] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 86 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:52.138 [GatlingSystem-akka.actor.default-dispatcher-7] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:52.321 [GatlingSystem-akka.actor.default-dispatcher-4] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1259 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:52.321 [GatlingSystem-akka.actor.default-dispatcher-4] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:52.643 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - karate.env system property was:  
+22:04:52.645 [GatlingSystem-akka.actor.default-dispatcher-10] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:52.743 [GatlingSystem-akka.actor.default-dispatcher-10] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 97 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:52.743 [GatlingSystem-akka.actor.default-dispatcher-10] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:52.834 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 700 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:52.835 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:53.114 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  com.intuit.karate - karate.env system property was:  
+22:04:53.116 [GatlingSystem-akka.actor.default-dispatcher-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:53.547 [GatlingSystem-akka.actor.default-dispatcher-3] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 431 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:53.548 [GatlingSystem-akka.actor.default-dispatcher-3] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:53.611 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  i.g.core.controller.inject.Injector - StoppedInjecting
+22:04:53.620 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  com.intuit.karate - karate.env system property was:  
+22:04:53.622 [GatlingSystem-akka.actor.default-dispatcher-9] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:53.855 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 2311 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:53.855 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:54.064 [GatlingSystem-akka.actor.default-dispatcher-9] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 442 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:54.064 [GatlingSystem-akka.actor.default-dispatcher-9] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:54.135 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+22:04:54.137 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+22:04:54.579 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 441 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+22:04:54.579 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+22:04:54.579 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario get request are stopped
+22:04:54.580 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+22:04:54.580 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+22:04:54.623 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - StatsEngineStopped
+22:04:54.771 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected ArrayBuffer(D:\NgocTrong\KarateApp\myproject\target\gatling\testsimulation-20230413150449446\simulation.log) from testsimulation-20230413150449446
+22:04:54.781 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+22:04:54.789 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 31 lines
+22:04:54.799 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+22:04:54.832 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 31 lines
+10:52:40.583 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+10:52:41.018 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - karate.env system property was:  
+10:52:41.018 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+10:52:41.018 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - karate.env system property was:  
+10:52:41.018 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - karate.env system property was:  
+10:52:41.018 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+10:52:41.501 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - karate.env system property was:  
+10:52:42.687 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 5: classpath:examples/users/deleteRequest.feature
+10:52:45.821 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 275
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:52:45.857 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:52:45.860 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:52:45.858 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:52:45.896 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:52:47.827 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1966 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:52:47.827 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1968 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:52:47.828 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:47.828 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:47.839 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - karate.env system property was:  
+10:52:47.843 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://jsonplaceholder.typicode.com/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:52:47.844 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1982 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:52:47.848 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:47.852 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - karate.env system property was:  
+10:52:47.859 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 275
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:52:47.951 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 108 milliseconds for URL: https://jsonplaceholder.typicode.com/users/1
+10:52:47.951 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:47.953 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 94 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:52:47.954 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:47.970 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<fail>> feature 2 of 5: classpath:examples/users/getRequest.feature
+10:52:47.970 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<fail>> feature 3 of 5: classpath:examples/users/postRequest.feature
+10:52:50.731 [ForkJoinPool-1-worker-4] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 4909 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:52:50.732 [ForkJoinPool-1-worker-4] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:50.741 [pool-1-thread-4] INFO  com.intuit.karate.Runner - <<fail>> feature 4 of 5: classpath:examples/users/putRequest.feature
+10:52:50.780 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 4883 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:52:50.781 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:52:50.831 [pool-1-thread-5] INFO  com.intuit.karate.Runner - <<fail>> feature 5 of 5: classpath:examples/users/users.feature
+10:53:32.800 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+10:53:33.308 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - karate.env system property was:  
+10:53:33.308 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+10:53:33.308 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+10:53:33.313 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - karate.env system property was:  
+10:53:33.308 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - karate.env system property was:  
+10:53:33.678 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - karate.env system property was:  
+10:53:35.394 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 5: classpath:examples/users/deleteRequest.feature
+10:53:38.838 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:53:38.839 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 275
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:53:38.838 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:53:38.839 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:53:38.861 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:53:39.171 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 320 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.171 [ForkJoinPool-1-worker-4] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 323 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:53:39.171 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 323 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.172 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.172 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.171 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 307 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.174 [ForkJoinPool-1-worker-2] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.172 [ForkJoinPool-1-worker-4] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.182 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+10:53:39.182 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+10:53:39.188 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 275
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:53:39.187 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://jsonplaceholder.typicode.com/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:53:39.187 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 348 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.199 [ForkJoinPool-1-worker-5] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.210 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<fail>> feature 2 of 5: classpath:examples/users/getRequest.feature
+10:53:39.210 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<fail>> feature 3 of 5: classpath:examples/users/postRequest.feature
+10:53:39.215 [pool-1-thread-4] INFO  com.intuit.karate.Runner - <<fail>> feature 4 of 5: classpath:examples/users/putRequest.feature
+10:53:39.282 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 94 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:53:39.282 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.309 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 111 milliseconds for URL: https://jsonplaceholder.typicode.com/users/1
+10:53:39.310 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+10:53:39.535 [pool-1-thread-5] INFO  com.intuit.karate.Runner - <<fail>> feature 5 of 5: classpath:examples/users/users.feature
+16:13:39.228 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:13:40.508 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+16:13:41.294 [main] DEBUG com.intuit.karate - response time in milliseconds: 769.54
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 4511
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 7b7ad590bee6045d-HKG
+1 < Cache-Control: max-age=43200
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 14 Apr 2023 09:13:41 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CCa7v0KdFXDm9U4XAa2Tj2rX5ojLlvUz9u3zjxs2zHFeWqS7URADCkMV7CLgi1ltfPcGMBJyEsVAs47L7p2l3gZWzFwzRpeP8r6lkv%2B0F3CyDWNIjvmpMcMBpICh7rA4OJJhJor80shmLwBJjRQD"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1666485318
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+16:13:41.338 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+16:13:41.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 148.21
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 15997
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 7b7ad5921ced04e3-HKG
+2 < Cache-Control: max-age=43200
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 14 Apr 2023 09:13:41 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: -1
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Pragma: no-cache
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0H9LNsj7%2F2onmKf%2FYhg3iEbJsXIXVvWs%2BMFrjdmuVUD93mWvlXH2FX2GpUO9nrWidWzhAZtfo%2BsS0EtQU2Ds1sz%2FJ9iToAx1ypDoZeuyvOHecIKlpvSQeC%2BWWapsvkwn05iVUxN6xxj0bn0dzk7F"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1677114033
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+16:23:08.605 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:25:31.334 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:38:33.301 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:42:51.390 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:42:51.633 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+16:44:44.510 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:44:45.840 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 38
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"client_id":"#(name)","age":"#(age)"}
+
+16:44:46.594 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 753 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize/
+16:44:46.598 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+16:45:47.758 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:45:48.990 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize/?client_id=John
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:45:49.774 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 782 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize/?client_id=John
+16:45:49.775 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+16:46:52.651 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:46:53.554 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=John
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:46:54.226 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 672 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=John
+16:46:54.258 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+16:49:21.844 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:49:23.689 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:49:24.364 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 673 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+16:49:24.364 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+16:54:43.018 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:54:44.507 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:54:45.405 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 897 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+16:54:45.405 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+16:59:29.673 [main] INFO  com.intuit.karate - karate.env system property was:  
+16:59:30.547 [main] DEBUG com.intuit.karate - request:
+1 > POST https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: login-demo.curity.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:59:31.186 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 638 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&response_type=code%2520id_token%2520token&redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&state=1599045202487-sVG&scope=openid%2520profile%2520read&nonce=1599045229829-DpV
+16:59:31.188 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+17:00:15.534 [main] INFO  com.intuit.karate - karate.env system property was:  
+17:00:16.462 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+17:00:17.127 [main] DEBUG com.intuit.karate - response time in milliseconds: 659.09
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 7307
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 7b7b19d2be3304cc-HKG
+1 < Cache-Control: max-age=43200
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 14 Apr 2023 10:00:17 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iSOB7OF%2FXkbBJB9psrJ%2BG7uK8md%2BjwXAyuXbJQgGcUjQ7Gx69ndhGEArqnoToI4Ld%2F08mpAGOM0TXIpyXCBW%2BSKBTAFjP3yN0AahdnlAFekAeI6M8HftyfHovzjP0ZIp4tSuvNFGINjuJiGg8WvI"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1666485318
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:00:17.189 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+17:00:17.369 [main] DEBUG com.intuit.karate - response time in milliseconds: 177.84
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 18793
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 7b7b19d4391a0509-HKG
+2 < Cache-Control: max-age=43200
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 14 Apr 2023 10:00:17 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: -1
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Pragma: no-cache
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O%2B%2B1LlcsKT61x8%2Fl6PAU593%2BMPYjdiuWYLXlpb4Zlnkt97aQC0e%2BwG6JIwJ0sdwqHJAkaioTr1pVptaqr0i4TIjfMPQRXJnY3mrpMaaiatl9WEBM0s1J%2FdP3UjUgEN9btYiiMnO%2FN0d8LUG6D4AF"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1677114033
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+

@@ -1,0 +1,21 @@
+<testsuite failures="1"
+           name="examples/users/deleteRequest.feature"
+           skipped="0"
+           tests="1"
+           time="0.021648">
+   <testcase classname="examples.users.deleteRequest"
+             name="Delete request"
+             time="0.021648">
+      <failure message="deleteRequest.feature:10 - evaluation (js) failed: url, javax.script.ScriptException: ReferenceError: &#34;url&#34; is not defined in &lt;eval&gt; at line number 1&#xA;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given url url ............................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: deleteRequest.feature:10 - evaluation (js) failed: url, javax.script.ScriptException: ReferenceError: "url" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#xD;
+	at ✽.Given url url (deleteRequest.feature:10)&#xD;
+
+And path 'posts', 1 ....................................................... skipped
+When method Delete ........................................................ skipped
+Then status 200 ........................................................... skipped</failure>
+   </testcase>
+</testsuite>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>Oauth_2.oauth2test.getRequest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">1</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2023-04-14 04:59:31 PM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1:6]">[1:6] access to token service </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">Oauth_2/oauth2test/getRequest.feature</span><span class="feature-description">sample karate test script for get request</span></div><div class="scenario"><div class="scenario-heading" id="[1:6]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">access to token service </span></div><div class="scenario-time failed">ms: 1403</div></div><div class="step-row"><div class="step-container" id="[1:6]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:6]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url 'https://login-demo.curity.io/oauth/v2/oauth-authorize'</div></div><div class="time-cell passed">3</div></div><div class="preformatted" data-parent="1">16:59:29.701 karate.env system property was:</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">* def companyExpected =</div></div><div class="time-cell passed">3</div></div><div class="preformatted" data-parent="2">{
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+}</div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">And param client_id = 'demo-web-client'</div></div><div class="time-cell passed">4</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">And param response_type = 'code%20id_token%20token'</div></div><div class="time-cell passed">3</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">And param redirect_uri = 'https://oauth.tools/callback/hybrid'</div></div><div class="time-cell passed">5</div></div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">And param state = '1599045202487-sVG'</div></div><div class="time-cell passed">10</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">And param scope = 'openid%20profile%20read'</div></div><div class="time-cell passed">2</div></div><div class="step-row"><div class="step-container" id="8"><div class="step-ref passed">8</div><div class="step-cell passed">And param nonce = '1599045229829-DpV'</div></div><div class="time-cell passed">3</div></div><div class="step-row"><div class="step-container" id="9"><div class="step-ref passed">9</div><div class="step-cell passed">And request {}</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="10"><div class="step-ref failed">10</div><div class="step-cell failed">When method POST</div></div><div class="time-cell failed">1368</div></div><div class="preformatted" data-parent="10">16:59:30.548 request:
+1 &gt; POST https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&amp;response_type=code%2520id_token%2520token&amp;redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&amp;state=1599045202487-sVG&amp;scope=openid%2520profile%2520read&amp;nonce=1599045229829-DpV
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: login-demo.curity.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+16:59:31.188 javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 638 milliseconds for URL: https://login-demo.curity.io/oauth/v2/oauth-authorize?client_id=demo-web-client&amp;response_type=code%2520id_token%2520token&amp;redirect_uri=https%3A%2F%2Foauth.tools%2Fcallback%2Fhybrid&amp;state=1599045202487-sVG&amp;scope=openid%2520profile%2520read&amp;nonce=1599045229829-DpV
+16:59:31.188 http request failed: 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+getRequest.feature:24 - 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="11"><div class="step-ref skipped">11</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div></div></div>
+    </div>   
+  </body>
+</html>

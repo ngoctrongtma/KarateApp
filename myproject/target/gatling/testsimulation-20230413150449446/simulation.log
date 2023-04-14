@@ -1,0 +1,31 @@
+RUN	examples.performencetest.TestSimulation	testsimulation	1681398289446	 	3.0.2
+USER	get request	1	START	1681398289618	1681398289618
+USER	get request	2	START	1681398290537	1681398290537
+REQUEST	2		GET /users	1681398290553	1681398290643	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	2	END	1681398290537	1681398290646
+REQUEST	1		GET /users	1681398290330	1681398290795	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	1	END	1681398289618	1681398290802
+USER	get request	3	START	1681398291049	1681398291049
+USER	get request	4	START	1681398291531	1681398291531
+USER	get request	5	START	1681398292039	1681398292039
+USER	get request	6	START	1681398292120	1681398292120
+REQUEST	5		GET /users	1681398292052	1681398292138	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	5	END	1681398292039	1681398292138
+REQUEST	3		GET /users	1681398291062	1681398292321	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	3	END	1681398291049	1681398292320
+USER	get request	7	START	1681398292629	1681398292629
+REQUEST	7		GET /users	1681398292646	1681398292743	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	7	END	1681398292629	1681398292744
+REQUEST	6		GET /users	1681398292134	1681398292834	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	6	END	1681398292120	1681398292834
+USER	get request	8	START	1681398293104	1681398293104
+REQUEST	8		GET /users	1681398293116	1681398293547	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	8	END	1681398293104	1681398293547
+USER	get request	9	START	1681398293611	1681398293611
+REQUEST	4		GET /users	1681398291544	1681398293855	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	4	END	1681398291531	1681398293856
+REQUEST	9		GET /users	1681398293622	1681398294064	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	9	END	1681398293611	1681398294064
+USER	get request	10	START	1681398294123	1681398294123
+REQUEST	10		GET /users	1681398294138	1681398294579	KO	classpath:examples/performencetest/User.feature:9 method get
+USER	get request	10	END	1681398294123	1681398294579

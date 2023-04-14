@@ -1,0 +1,145 @@
+<testsuite failures="4"
+           name="examples/users/users.feature"
+           skipped="0"
+           tests="4"
+           time="11.27171">
+   <testcase classname="examples.users.users"
+             name="get all users and then get the first user by id"
+             time="5.560917">
+      <failure message="users.feature:10 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method get (users.feature:10)&#xD;
+
+Then status 200 ........................................................... skipped
+* def first = response[0] ................................................. skipped
+Given path 'users', first.id .............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped</failure>
+   </testcase>
+   <testcase classname="examples.users.users"
+             name="create a user and then get it by id"
+             time="5.489439">
+      <failure message="users.feature:25 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method get (users.feature:10)&#xD;
+
+Then status 200 ........................................................... skipped
+* def first = response[0] ................................................. skipped
+Given path 'users', first.id .............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def user = read('classpath:data/post_request/user.json') ................ passed
+Given url 'https://jsonplaceholder.typicode.com/users' .................... passed
+And request user .......................................................... passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:25 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method post (users.feature:25)&#xD;
+
+Then status 201 ........................................................... skipped</failure>
+   </testcase>
+   <testcase classname="examples.users.users"
+             name="Delete request"
+             time="0.125499">
+      <failure message="users.feature:32 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method get (users.feature:10)&#xD;
+
+Then status 200 ........................................................... skipped
+* def first = response[0] ................................................. skipped
+Given path 'users', first.id .............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def user = read('classpath:data/post_request/user.json') ................ passed
+Given url 'https://jsonplaceholder.typicode.com/users' .................... passed
+And request user .......................................................... passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:25 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method post (users.feature:25)&#xD;
+
+Then status 201 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users', 1 ..................................................... passed
+When method Delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:32 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method Delete (users.feature:32)&#xD;
+
+Then status 200 ........................................................... skipped</failure>
+   </testcase>
+   <testcase classname="examples.users.users" name="Put request" time="0.095855">
+      <failure message="users.feature:50 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method get (users.feature:10)&#xD;
+
+Then status 200 ........................................................... skipped
+* def first = response[0] ................................................. skipped
+Given path 'users', first.id .............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def user = read('classpath:data/post_request/user.json') ................ passed
+Given url 'https://jsonplaceholder.typicode.com/users' .................... passed
+And request user .......................................................... passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:25 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method post (users.feature:25)&#xD;
+
+Then status 201 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users', 1 ..................................................... passed
+When method Delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:32 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method Delete (users.feature:32)&#xD;
+
+Then status 200 ........................................................... skipped
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def post = .............................................................. passed
+Given url 'https://jsonplaceholder.typicode.com/' ......................... passed
+And path 'posts', 1 ....................................................... passed
+And request post .......................................................... passed
+When method PUT ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:50 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method PUT (users.feature:50)&#xD;
+
+Then status 200 ........................................................... skipped</failure>
+   </testcase>
+</testsuite>

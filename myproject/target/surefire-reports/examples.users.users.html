@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>examples.users.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">4</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2023-04-14 10:53:40 AM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1:8]">[1:8] get all users and then get the first user by id </a></div><div class="nav-item failed"><a href="#[2:20]">[2:20] create a user and then get it by id </a></div><div class="nav-item failed"><a href="#[3:29]">[3:29] Delete request </a></div><div class="nav-item failed"><a href="#[4:36]">[4:36] Put request </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">examples/users/users.feature</span><span class="feature-description">sample karate test script | for help, see: https://github.com/intuit/karate/wiki/IDE-Support</span></div><div class="scenario"><div class="scenario-heading" id="[1:8]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">getUser</a></div><span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">get all users and then get the first user by id </span></div><div class="scenario-time failed">ms: 5561</div></div><div class="step-row"><div class="step-container" id="[1:8]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:8]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">3</div></div><div class="preformatted" data-parent="1">10:53:33.315 karate.env system property was:</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">Given path 'users'</div></div><div class="time-cell passed">27</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref failed">3</div><div class="step-cell failed">When method get</div></div><div class="time-cell failed">5531</div></div><div class="preformatted" data-parent="3">10:53:38.847 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:53:39.172 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 323 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.172 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+users.feature:10 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="4"><div class="step-ref skipped">4</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref skipped">5</div><div class="step-cell skipped">* def first = response[0]</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="6"><div class="step-ref skipped">6</div><div class="step-cell skipped">Given path 'users', first.id</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref skipped">7</div><div class="step-cell skipped">When method get</div></div><div class="time-cell skipped">0</div></div><div class="step-row"><div class="step-container" id="8"><div class="step-ref skipped">8</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div></div><div class="scenario"><div class="scenario-heading" id="[2:20]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">postUser</a></div><span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">create a user and then get it by id </span></div><div class="scenario-time failed">ms: 5489</div></div><div class="step-row"><div class="step-container" id="[2:20]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[2:20]bg"><div class="step-container" id="9"><div class="step-ref bg-step">9</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">1</div></div><div class="preformatted" data-parent="9">10:53:33.680 karate.env system property was:</div><div class="step-row"><div class="step-container" id="10"><div class="step-ref passed">10</div><div class="step-cell passed">* def user = read('classpath:data/post_request/user.json')</div></div><div class="time-cell passed">3</div></div><div class="step-row"><div class="step-container" id="11"><div class="step-ref passed">11</div><div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users'</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="12"><div class="step-ref passed">12</div><div class="step-cell passed">And request user</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="13"><div class="step-ref failed">13</div><div class="step-cell failed">When method post</div></div><div class="time-cell failed">5485</div></div><div class="preformatted" data-parent="13">10:53:38.862 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"name":"Test User from Json file","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+10:53:39.174 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 307 milliseconds for URL: https://jsonplaceholder.typicode.com/users
+10:53:39.174 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+users.feature:25 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="14"><div class="step-ref skipped">14</div><div class="step-cell skipped">Then status 201</div></div><div class="time-cell skipped">0</div></div></div><div class="scenario"><div class="scenario-heading" id="[3:29]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">deleteUser</a></div><span class="scenario-keyword">Scenario: [3:29]</span><span class="scenario-name">Delete request </span></div><div class="scenario-time failed">ms: 125</div></div><div class="step-row"><div class="step-container" id="[3:29]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[3:29]bg"><div class="step-container" id="15"><div class="step-ref bg-step">15</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="15">10:53:39.185 karate.env system property was:</div><div class="step-row"><div class="step-container" id="16"><div class="step-ref passed">16</div><div class="step-cell passed">Given path 'users', 1</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="17"><div class="step-ref failed">17</div><div class="step-cell failed">When method Delete</div></div><div class="time-cell failed">125</div></div><div class="preformatted" data-parent="17">10:53:39.197 request:
+1 &gt; DELETE https://jsonplaceholder.typicode.com/users/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+
+10:53:39.310 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 111 milliseconds for URL: https://jsonplaceholder.typicode.com/users/1
+10:53:39.311 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+users.feature:32 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="18"><div class="step-ref skipped">18</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div></div><div class="scenario"><div class="scenario-heading" id="[4:36]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">postUser</a></div><span class="scenario-keyword">Scenario: [4:36]</span><span class="scenario-name">Put request </span></div><div class="scenario-time failed">ms: 96</div></div><div class="step-row"><div class="step-container" id="[4:36]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[4:36]bg"><div class="step-container" id="19"><div class="step-ref bg-step">19</div><div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="19">10:53:39.185 karate.env system property was:</div><div class="step-row"><div class="step-container" id="20"><div class="step-ref passed">20</div><div class="step-cell passed">* def post =</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="20">{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</div><div class="step-row"><div class="step-container" id="21"><div class="step-ref passed">21</div><div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/'</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="22"><div class="step-ref passed">22</div><div class="step-cell passed">And path 'posts', 1</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="23"><div class="step-ref passed">23</div><div class="step-cell passed">And request post</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="24"><div class="step-ref failed">24</div><div class="step-cell failed">When method PUT</div></div><div class="time-cell failed">95</div></div><div class="preformatted" data-parent="24">10:53:39.188 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 275
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_121)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"}
+
+10:53:39.282 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 94 milliseconds for URL: https://jsonplaceholder.typicode.com/posts/1
+10:53:39.282 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+users.feature:50 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div><div class="step-row"><div class="step-container" id="25"><div class="step-ref skipped">25</div><div class="step-cell skipped">Then status 200</div></div><div class="time-cell skipped">0</div></div></div></div>
+    </div>   
+  </body>
+</html>

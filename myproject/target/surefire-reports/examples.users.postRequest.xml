@@ -1,0 +1,25 @@
+<testsuite failures="1"
+           name="examples/users/postRequest.feature"
+           skipped="0"
+           tests="1"
+           time="5.561379">
+   <testcase classname="examples.users.postRequest"
+             name="create a user and then get it by id"
+             time="5.561379">
+      <failure message="postRequest.feature:13 - &#xA;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def user = read('classpath:data/post_request/user.json') ................ passed
+Given url 'https://jsonplaceholder.typicode.com/users' .................... passed
+And request user .......................................................... passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postRequest.feature:13 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#xD;
+	at ✽.When method post (postRequest.feature:13)&#xD;
+
+Then status 201 ........................................................... skipped
+* def id = response.id .................................................... skipped
+* print 'created id is: ', id ............................................. skipped
+Given path id ............................................................. skipped</failure>
+   </testcase>
+</testsuite>
